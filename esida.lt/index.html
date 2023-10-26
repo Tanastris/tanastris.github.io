@@ -22,15 +22,18 @@
   </head>
   <body>
     <!-- HEADER================================================ -->
-    <nav class="navbar navbar-expand-md bg-body-tertiary">
-      <div class="container-fluid">
+    <nav
+      class="navbar bg-dark navbar-expand-md bg-body-tertiary"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid fs-4 mx-3">
         <a class="navbar-brand" href="/esida.lt/index.html">
           <!-- SKIRO -->
-          <div class="esida-logo-nav">
+          <div>
             <img
               src="/esida.lt/images/SKIRO logo.png"
               class="img-fluid"
-              style="max-width: 100px; max-height: 50px"
+              width="50"
               alt="logo"
             />
           </div>
@@ -47,7 +50,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav w-100 d-flex gap-4 justify-content-center mx-5">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Kava</a>
             </li>
@@ -58,9 +61,20 @@
               <a class="nav-link" href="#">Kitos prekės</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <a class="nav-link">Apie mus</a>
             </li>
           </ul>
+        </div>
+        <!-- Prisijungti prie savo account. Po prisijungimo pakeisti i display:none ir parodyti zemiau esancia eilute -->
+        <a href="#" class="text-decoration-none d-none">Prisijungti</a>
+        <div class="nav-login-complete">
+          <a href="#" class="text-decoration-none p-2 link-light"
+            ><i class="bi bi-person-check"></i
+          ></a>
+          <!-- Rodyti sita prisijungus. reikes papildyti krepseliu ikonomis -->
+          <a href="#" class="text-decoration-none p-2 link-light">
+            <i class="bi bi-cart"></i
+          ></a>
         </div>
       </div>
     </nav>
